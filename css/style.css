@@ -116,6 +116,7 @@ section.post3 {
 
 h2 {
   color: #00adef;
+  font-size: 24px;
 }
 
 h3 {
@@ -123,6 +124,8 @@ h3 {
   color: #00adef;
   text-align: center;
   margin-left: 50px;
+  font-size: 16px;
+
 }
 
 footer {
