@@ -1,16 +1,36 @@
 $(document).ready(function() {
 
+$('form').submit(validateForm);
+
+function validateForm() {
+	event.preventDefault();
+
+	var firstName = $('#firstName').val();
+	if (firstName == '') {
+		alert('You must enter your first name')
+	}
+	var lastName = $('#lastName').val();
+	if (lastName == '') {
+		alert('You must enter your last name')
+	}
+
+	if (firstName != '', lastName != '') {
+		window.location.assign('thanks.html');
+	}
+	
+}
+
 $('.readmore').click(readMore);
-$('.readless').hide();
+$('.readless').hide(); 
 
 function readMore() {
 	event.preventDefault();
 	$('#show-this-on-click').slideToggle();
 	$('.readmore').hide();
-	$('readless').show();
+	$('.readless').show();
 }
 
-$('readless').click(readLess);
+$('.readless').click(readLess);
 
 function readLess() {
 	event.preventDefault();
@@ -20,33 +40,13 @@ function readLess() {
 }
 
 function showThisOnClick() {
-	$('#showThisOnClick').show().slideToggle;
+	$('#show-this-on-click').show().slideToggle;
 	$('.readless').hide();
 }
 
-$('#showThisOnClick').hide();
+$('#show-this-on-click').hide();
 $('#readMoreFunction').click(showThisOnClick);
 
-
-function validateForm() {
-	event.preventDefault();
-
-	var firstName = $('#firstName').val();
-	if (firstName == '') {
-		alert('You must enter your first name')
-		return false;
-	}
-	var lastName = $('#lastName').val();
-	if (lastName == '') {
-		alert('You must enter your last name')
-		return false;
-	}
-
-	if (firstName != '', lastName != '') {
-		window.location.assign('thanks.html');
-	}
-	
-}
 
 
 
