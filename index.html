@@ -1,3 +1,9 @@
+<!--
+	Hi Krissy!  I added feedback on your code in HTML comments like this one.
+
+	Overall, great start so far!  More comments below.
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,6 +18,11 @@
 	<!-- external CSS link -->
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+	<!-- 
+		reset.css should be the first stylesheet that you include - even before font awesome.  This is just to 
+		be safe and make sure that reset.css does not accidentally overwrite any styles that may be a part of
+		the Font Awesome CSS file.
+	-->
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -35,7 +46,14 @@
 
 	</header>
 
+	<!--
+		It is semantically better to use the <main> tag here, since this is the primary (main) part of your
+		website.  Using the <main> tag here also means that you do not have to have <section> tags inside of
+		other <section> tags, which is usually frowned upon semantically.  What you have still works from 
+		a technical perspective - this is more of a code style comment.
+	-->
 	<section id="main">
+		<!-- I'm sure this is just a typo, but "container" is misspelled -->
 		<div class="conainer">
 			<section id="posts">
 				<article class="post">
@@ -78,6 +96,10 @@
 			</aside>
 			</div>
 
+		<!--
+			Make sure to close your <section> tag (the one with the ID of "main") here!
+		-->
+
 	<footer>
 
 		<ul>
@@ -85,6 +107,10 @@
 			<li><a href="#"><img src="images/facebook.png" alt="Facebook logo"></a></li>
 			<li><a href="https://www.instagram.com/unaidsglobal/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
 		</ul>
+
+	<!--
+		Make sure to close your <footer> tag here!
+	-->
 		
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
