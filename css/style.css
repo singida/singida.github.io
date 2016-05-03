@@ -1,3 +1,7 @@
+/*
+  Hi Krissy!  I also have a couple of comments about your CSS; I put them inline in your code below.
+*/
+
 * {
      -moz-box-sizing: border-box; /* Firexfox */
      -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
@@ -96,9 +100,20 @@ div.mainParagraph {
 }
 
 p {
+  /*
+    You can also write this line as:
+      margin: 20px 75px;
+
+    It has the same meaning (the first number is for both top and bottom margin; the second number
+    is for both left and right margin).  This is just a shorthand option.
+  */
   margin: 20px 75px 20px 75px;
 }
 
+/*
+  These .post1, .post2, and .post3 classes all have the same rule, so you could create just one class - perhaps
+  .post - to use instead.  That would avoid you having duplicate classes / code.
+*/
 section.post1 {
   float: left;
   width: 33%;
