@@ -19,7 +19,7 @@
 <body>
 	<header>
 		<div class="container">
-			<img src="images/unaids_eng.png" alt="UNAIDS USA logo">
+			<img src="images/unaids_eng.png" class="logo" alt="UNAIDS USA logo">
 			<nav>
 				<ul>
 					<li><a href="#aboutUs">About Us</a></li>
@@ -28,8 +28,15 @@
 					<li><a href="#newFromUNAIDS">New from UNAIDS</a></li>
 				</ul>
 			</nav>
-			<a href="donate.html">
-				<button>Donate</button>
+			<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+				<input type="hidden" name="cmd" value="_s-xclick">
+				<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+">
+				<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+				<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+			</form>
+
+<!-- 				<button>Donate</button> -->
 			</a>
 		</div>
 
@@ -53,65 +60,46 @@
 					<a id="aboutUs">
 						<h2>About Us</h2>
 					</a>
-					<img src="http://placekitten.com/g/1000/200" alt="placeholder">
+					<img src="http://placekitten.com/g/750/200" alt="placeholder">
 					<p>Bacon ipsum dolor amet salami prosciutto ribeye pancetta pig kevin strip steak alcatra kielbasa. Filet mignon pork pork loin strip steak turducken boudin. Spare ribs meatball porchetta, chuck flank bacon rump tail beef ham hock pork loin filet mignon andouille. Turducken pork chop rump cupim ham biltong pancetta. Ham hock tail meatloaf brisket. Pork loin biltong porchetta cow bresaola short ribs, filet mignon pork chop meatball meatloaf pancetta capicola.</p>
 				</article>
 				<article class="news">
 					<a id="news">
 						<h2>News</h2>
 					</a>
-					<img src="http://placekitten.com/g/1000/300" alt="placeholder">
+					<img src="http://placekitten.com/g/750/300" alt="placeholder">
 					<p>Boudin doner porchetta, pork belly beef ribs ball tip capicola. Cupim shank bresaola shankle ham hock ribeye. Pastrami drumstick cupim salami. Ground round tri-tip prosciutto chicken filet mignon sausage tongue ham hock strip steak leberkas turkey.</p>
 				</article>
 				<article class="events">
 					<a id="events">
 						<h2>Events</h2>
 					</a>
-					<img src="http://placekitten.com/g/1000/300" alt="placeholder">
+					<img src="http://placekitten.com/g/750/300" alt="placeholder">
 					<p>Jerky shoulder alcatra leberkas. Ham fatback pastrami flank corned beef. Pork andouille brisket shoulder short loin pastrami sirloin, spare ribs bresaola hamburger fatback ribeye strip steak bacon shank. Andouille cow bresaola, jerky prosciutto beef tenderloin shank pork pancetta turkey chuck meatball t-bone tongue. Tongue corned beef hamburger alcatra landjaeger pork belly fatback capicola pork jowl tail prosciutto strip steak beef.</p>
 				</article>
 				<article class="newFromUNAIDS">
 					<a id="newFromUNAIDS">
 						<h2>New from UNAIDS</h2>
 					</a>
-					<img src="http://placekitten.com/g/1000/300" alt="placeholder">
+					<img src="http://placekitten.com/g/750/300" alt="placeholder">
 					<p>Short loin swine salami alcatra pork chop ribeye drumstick turkey brisket. Salami pork belly jerky, swine ribeye spare ribs pork chop leberkas short loin strip steak drumstick rump pork loin prosciutto. Leberkas landjaeger sirloin, drumstick ground round tongue pork belly. Pork belly pork ham hock short ribs beef andouille frankfurter meatloaf short loin rump kielbasa boudin tri-tip.</p>
+					<a href="index.html">Return to the top of the page</a>
 				</article>
-				<!-- <section class="post1">
-					<img src="http://placekitten.com/g/333/300" alt="placeholder">
-					<h3>Header to Story 2</h3>
-					<span class="caption">
-						<p>Williamsburg single-origin coffee salvia bushwick occupy, shoreditch scenester wayfarers photo booth master cleanse. Fingerstache salvia gluten-free gochujang, synth small batch sriracha roof party VHS vegan franzen organic kitsch art party authentic. Lo-fi flexitarian echo park shabby chic ennui. Vegan letterpress normcore slow-carb, knausgaard marfa mlkshk pug austin raw denim salvia helvetica franzen craft beer.</p>
-					</span>
-				</section>
-				<section class="post2">
-					<img src="http://placekitten.com/g/333/300" alt="placeholder">
-					<h3>Header to Story 3</h3>
-					<span class="caption">
-						<p>Williamsburg single-origin coffee salvia bushwick occupy, shoreditch scenester wayfarers photo booth master cleanse. Fingerstache salvia gluten-free gochujang, synth small batch sriracha roof party VHS vegan franzen organic kitsch art party authentic. Lo-fi flexitarian echo park shabby chic ennui. Vegan letterpress normcore slow-carb, knausgaard marfa mlkshk pug austin raw denim salvia helvetica franzen craft beer.</p>
-					</span>
-				</section>
-				<section class="post3">
-					<img src="http://placekitten.com/g/333/300" alt="placeholder">
-					<h3>Header to Story 4</h3>
-					<span class="caption">
-						<p>Williamsburg single-origin coffee salvia bushwick occupy, shoreditch scenester wayfarers photo booth master cleanse. Fingerstache salvia gluten-free gochujang, synth small batch sriracha roof party VHS vegan franzen organic kitsch art party authentic. Lo-fi flexitarian echo park shabby chic ennui. Vegan letterpress normcore slow-carb, knausgaard marfa mlkshk pug austin raw denim salvia helvetica franzen craft beer.</p>
-					</span>
-				</section>
-			</section> -->
-
+			</div>
 			<aside id="sidebar">
 				<h3>UNAIDS USA Twitter Feed</h3>
 				<img src="http://placekitten.com/g/150/50" alt="placeholder">
 			</aside>
-			</div>
+			
 
 	<footer>
 
 		<ul>
-			<li><a href="#"><img src="images/twitter.png" alt="Twitter logo"></a></li>
-			<li><a href="#"><img src="images/facebook.png" alt="Facebook logo"></a></li>
-			<li><a href="https://www.instagram.com/unaidsglobal/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+			<li><a href="https://twitter.com/unaids"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+			<li><a href="https://www.facebook.com/UNAIDS"><i class="fa fa-facebook-official" aria-hidden="true" 5x></i></a></li>
+			<li><a href="https://www.instagram.com/unaidsglobal/"><i class="fa fa-instagram" aria-hidden="true" 5x></i></a></li>
+			<li><a href="https://plus.google.com/+unaids/posts"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a></li>
+			<li><a href="https://www.youtube.com/user/UNAIDS"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
 		</ul>
 		
 

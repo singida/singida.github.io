@@ -58,6 +58,10 @@ header nav ul li a {
      float: right;
 }
 
+.logo {
+  float: left;
+}
+
 button {
   float: right;
   clear: both;
@@ -84,6 +88,12 @@ div.mainParagraph {
   width: 120px;
 }
 
+article {
+  width: 65%;
+  margin: 10px;
+  float: left;
+}
+
  img {
   display: block;
   margin-left: auto;
@@ -99,21 +109,6 @@ p {
   margin: 20px 75px 20px 75px;
 }
 
-section.post1 {
-  float: left;
-  width: 33%;
-}
-
-section.post2 {
-  float: left;
-  width: 33%;
-}
-
-section.post3 {
-  float:left;
-  width: 33%;
-}
-
 h2 {
   color: #00adef;
   font-size: 24px;
@@ -125,19 +120,33 @@ h3 {
   text-align: center;
   margin-left: 50px;
   font-size: 16px;
+}
 
+aside {
+  width: 20%;
+  margin-right: 10px;
+  float: right;
+  border: solid black 2px;
+  padding: 25px;
+}
+
+#sidebar {
+  float: right;
 }
 
 footer {
   background: #818181;
   padding: 25px 0 45px;
   text-align: center;
+  width: 100%;
+  clear: both;
 }
 
 footer ul li {
   display: inline-block;
   list-style: none;
   margin: 0 26px 25px;
+  font-size: 36px;
 }
 footer p {
   font-size: 18px;
