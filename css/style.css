@@ -31,7 +31,7 @@
 /* above are base styles*/
 
 .container {
-     width: auto;
+     width: 70%;
      margin: 0 auto;
 }
 
@@ -60,6 +60,15 @@ header nav ul li a {
 
 .logo {
   float: left;
+  margin-top: 10px;
+  margin-right: 150px;
+}
+
+.paypal {
+  float: right;
+  margin-top: 10px;
+  margin-right: 50px;
+  clear: both;
 }
 
 button {
@@ -75,6 +84,16 @@ button {
 body {
      color: black;
      font: 'Montserrat', sans-serif;
+}
+
+#main {
+  width: 100%;
+}
+
+#posts {
+  width: 70%;
+  margin: 10px;
+  float: left;
 }
 
 form {
@@ -106,7 +125,7 @@ article {
 }
 
 p {
-  margin: 20px 75px 20px 75px;
+  width: 70%;
 }
 
 h2 {
@@ -132,6 +151,11 @@ aside {
 
 #sidebar {
   float: right;
+  width: 20%;
+}
+
+.twitter-timeline {
+  position: fixed;
 }
 
 footer {

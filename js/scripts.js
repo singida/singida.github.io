@@ -48,6 +48,4 @@ $('#show-this-on-click').hide();
 $('#readMoreFunction').click(showThisOnClick);
 
 
-
-
 });
