@@ -32,7 +32,7 @@
 
 .container {
      width: 70%;
-     margin: 0 auto;
+     margin: 10px 10px;
 }
 
 header {
@@ -62,6 +62,7 @@ header nav ul li a {
   float: left;
   margin-top: 10px;
   margin-right: 150px;
+  clear: both;
 }
 
 .paypal {
@@ -86,10 +87,6 @@ body {
      font: 'Montserrat', sans-serif;
 }
 
-#main {
-  width: 100%;
-}
-
 #posts {
   width: 70%;
   margin: 10px;
@@ -100,17 +97,14 @@ form {
   display: block;
 }
 
-div.mainParagraph {
-  vertical-align: top;
-  display: inline-block;
-  text-align: center;
-  width: 120px;
-}
-
 article {
   width: 65%;
   margin: 10px;
   float: left;
+}
+
+.hideMe {
+  display: none;
 }
 
  img {
@@ -122,10 +116,11 @@ article {
 
 .caption {
   display: block;
+  width: 100%;
 }
 
 p {
-  width: 70%;
+  width: 100%;
 }
 
 h2 {
@@ -155,7 +150,10 @@ aside {
 }
 
 .twitter-timeline {
+  float: right;
   position: fixed;
+  clear: top;
+  width: 20%;
 }
 
 footer {
