@@ -33,18 +33,21 @@
 .container {
      width: 70%;
      margin: 10px 10px;
+     position: relative;
 }
 
 header {
      padding: 25px 0;
      overflow: hidden;
      float: right;
+     font-family: 'montserrat', sans-serif;
+     font-weight: 700;
 }
 
 header nav {
-     float: left;
+     float: right;
      margin-top: 15px;
-     margin-right: 100px;
+     margin-right: 20px;
 }
 header nav ul li {
      display: inline-block;
@@ -56,13 +59,14 @@ header nav ul li a {
      color: #00adef;
      text-decoration: none;
      float: right;
+     clear: both;
 }
 
-.logo {
+#logo {
   float: left;
   margin-top: 10px;
   margin-right: 150px;
-  clear: both;
+/*  clear: left;*/
 }
 
 .paypal {
@@ -84,7 +88,18 @@ button {
 
 body {
      color: black;
-     font: 'Montserrat', sans-serif;
+}
+
+.post {
+  margin-left: 25px;
+}
+
+/*#main {
+  display: flex;
+}*/
+
+#main {
+  margin: auto;
 }
 
 #posts {
@@ -119,13 +134,27 @@ article {
   width: 100%;
 }
 
-p {
+#myCarousel {
+  margin: 25px;
   width: 100%;
+}
+
+.leadParagraph {
+  width: 60%;
+  margin-left: 50px;
+}
+
+p {
+  width: 750px;
+  font-family: 'Crimson Text', serif;
 }
 
 h2 {
   color: #00adef;
   font-size: 24px;
+  font-family: 'montserrat', sans-serif;
+  font-weight: 700;
+  margin: 50px;
 }
 
 h3 {
@@ -136,24 +165,109 @@ h3 {
   font-size: 16px;
 }
 
-aside {
-  width: 20%;
-  margin-right: 10px;
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+/* entypo */
+[class*="entypo-"]:before {
+   font-family: "entypo", sans-serif;
+}
+a { 
+   text-decoration: none;
+}
+ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+.readmore {
+  margin-left: 50px;
+}
+
+.readless {
+  margin-left: 50px;
+}
+
+.container {
+   margin: 0 auto;
+   padding: 20px 50px;
+   background: white;
+}
+#sticky-social {
+   left: 0;
+   position: fixed;
+   top: 150px;
+}
+#sticky-social a {
+   background: #333;
+   color: #fff;
+   display: block;
+   height: 35px;
+   font: 16px "Open Sans", sans-serif;
+   line-height: 35px;
+   position: relative;
+   text-align: center;
+   width: 35px;
+}
+#sticky-social a span {
+   line-height: 35px;
+   left: -120px;
+   position: absolute;
+   text-align:center;
+   width:120px;
+}
+#sticky-social a:hover span {
+   left: 100%;
+}
+#sticky-social a[class*="facebook"],
+#sticky-social a[class*="facebook"]:hover,
+#sticky-social a[class*="facebook"] span { background: #3b5998; }
+
+#sticky-social a[class*="twitter"],
+#sticky-social a[class*="twitter"]:hover,
+#sticky-social a[class*="twitter"] span { background: #00aced; }
+
+#sticky-social a[class*="gplus"],
+#sticky-social a[class*="gplus"]:hover,
+#sticky-social a[class*="gplus"] span { background: #dd4b39; }   
+
+#sticky-social a[class*="instagram"],
+#sticky-social a[class*="instagram"]:hover,
+#sticky-social a[class*="instagram"] span { background: #675144; }  
+
+#sticky-social a[class*="youtube"],
+#sticky-social a[class*="youtube"]:hover,
+#sticky-social a[class*="youtube"] span { background: #cc2127; }  
+
+*aside {
+  width: 30%;
   float: right;
-  border: solid black 2px;
+/*  border: solid black 2px;*/
   padding: 25px;
+/*  position: fixed;
+  right: 10px;
+  height: 150px;
+  top: 400px;
+  bottom: 50px;*/
+  clear: right;
+  margin-left: 25px;
 }
 
 #sidebar {
+  width: 30%;
   float: right;
-  width: 20%;
+  margin-right: 25px;
+  border: solid black 2px;
+  padding: 2px;
 }
 
 .twitter-timeline {
   float: right;
-  position: fixed;
-  clear: top;
+  top: 2%;
+  right: 2%;
+  clear: none;
   width: 20%;
+  margin-top: 25px;
 }
 
 footer {
@@ -169,6 +283,7 @@ footer ul li {
   list-style: none;
   margin: 0 26px 25px;
   font-size: 36px;
+  clear: both;
 }
 footer p {
   font-size: 18px;
